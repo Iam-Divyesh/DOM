@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="calc">
+
+            <div>
+                <input type="text" placeholder="Let's Calculate">
+            </div>
+
+            
+
+            <div class="buttons">
+                
+                <button class="first" onclick="clearDisplay()">C</button>
+                <button class="first" onclick=appendSymbol("")><sup>+</sup>/<sub>-</sub></button>
+                <button class="first" onclick=appendSymbol("%")>%</button>
+                <button class="second" onclick=appendSymbol("/")>/</button>
+
+                <button class="third" onclick=appendSymbol("7")>7</button>
+                <button class="third" onclick=appendSymbol("8")>8</button>
+                <button class="third" onclick=appendSymbol("9")>9</button>
+                <button class="second" onclick=appendSymbol("*")>X</button>
+
+                <button class="third" onclick=appendSymbol("4")>4</button>
+                <button class="third" onclick=appendSymbol("5")>5</button>
+                <button class="third" onclick=appendSymbol("6")>6</button>
+                <button class="second" onclick=appendSymbol("-")>-</button>
+
+                <button class="third" onclick=appendSymbol("1")>1</button>
+                <button class="third" onclick=appendSymbol("2")>2</button>
+                <button class="third" onclick=appendSymbol("3")>3</button>
+                <button class="second" onclick=appendSymbol("+")>+</button>
+
+                <button class="third" class="zero" onclick=appendSymbol("0") style="width: 100%; grid-column: 1/3 ;">0</button>
+                <button class="third" onclick=appendSymbol(".")>.</button>
+                <button class="second" onclick="calculate()">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
