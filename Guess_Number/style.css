@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Averta CY W10;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 500px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.card h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.card input{
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    background-color:rgb(216, 216, 216);
+    border-radius: 10px;
+    margin-bottom:20px ;
+    margin-top:20px ;
+}
+
+.card .button{
+    display: flex;
+    justify-content: center;
+}
+
+.card button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-size: 30px;
+    margin:20px 0;
+    cursor: pointer;
+}
+
+.greeting{
+    /* display:none; */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.greeting.show{
+    opacity: 1;
+    /* display: block; */
+}
+
