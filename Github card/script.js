@@ -5,12 +5,15 @@ const card = document.querySelector(".card");
 
 let gitUserName = document.querySelector('#gitusername');
 let search = document.querySelector('#search');
+let viewprofile = document.querySelector("#viewprofile")
+let link = document.querySelector("#link")
 
 search.addEventListener('click', function () {
     if (gitUserName.value !== "") {
         // Reset requestUrl to the original value before appending the username
         requestUrl = 'https://api.github.com/users/';
         requestUrl += gitUserName.value;
+        link.href = `https://github.com/${gitUserName.value}`;
 
         // Reset the input field for the next search
         gitUserName.value = "";
